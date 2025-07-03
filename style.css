@@ -1,1 +1,68 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+:root {
+    --cor-fundo: #0f0f0f;
+    --cor-cartao: #1a1a1a;
+    --cor-borda: #2c2c2c;
+    --cor-primaria: #00f2ff;
+    --cor-secundaria: #ffffff;
+    --cor-texto: #e0e0e0;
+    --sombra: 0 0 15px rgba(0, 242, 255, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+    flex-direction: column;
+}
+
+.container {
+    background-color: var(--cor-cartao);
+    border: 1px solid var(--cor-borda);
+    border-radius: 1rem;
+    box-shadow: var(--sombra);
+    padding: 3rem;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#entrada-de-texto {
+    width: 100%;
+    min-height: 10rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 2px solid var(--cor-primaria);
+    font-size: 1.1rem;
+    background-color: #141414;
+    color: var(--cor-texto);
+    resize: none;
+}
+
+#entrada-de-texto::placeholder {
+    color: #666;
+}
